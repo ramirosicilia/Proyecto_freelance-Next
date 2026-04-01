@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tusitio.com" // ⚠️ CAMBIAR POR TU DOMINIO
+  const baseUrl = "https://proyecto-freelance-next.vercel.app" // ⚠️ CAMBIAR POR TU DOMINIO
 
   return [
     {
