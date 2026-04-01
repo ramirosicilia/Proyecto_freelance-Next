@@ -1,0 +1,197 @@
+.paquetesSection{
+  margin-top: 3rem;
+  padding: 80px 20px;
+  text-align: center;
+  background: #0d1117;
+  color: #fff;
+}
+
+.paquetesTitle {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: .6px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.paqueteSubtitle {
+  font-size: 1rem;
+  letter-spacing: .7px;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.paquetesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.paqueteCard {
+  background: #161b22;
+  border: 1px solid #2b3139;
+  padding: 30px;
+  border-radius: 18px;
+  transition: 0.25s;
+  position: relative;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.paqueteCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-color: #007bff;
+}
+
+.paqueteCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.paquetePrice {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00c8ff;
+  margin-bottom: 20px;
+}
+
+.paqueteCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
+}
+
+.paqueteCard ul li {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.btnSelect {
+  display: block;
+  background: #007bff;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btnSelect:hover {
+  background: #005fcc;
+}
+
+.destacado {
+  border: 2px solid #007bff;
+  transform: scale(1.03);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 12px;
+} 
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .paquetes-grid { max-width: 1000px; gap: 25px; }
+  .paquete-card { padding: 28px; }
+}
+
+
+/* =============================== */
+/*  LG — ≥ 992px                   */
+/* =============================== */
+@media (max-width: 992px) {
+  .paquetesTitle { font-size: 2.4rem; }
+
+  .paquetesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .paqueteCard h3 { font-size: 1.35rem; }
+}
+
+
+/* =============================== */
+/*  MD — ≥ 768px (tablets)         */
+/* =============================== */
+@media (max-width: 768px) {
+  .paquetesSection { padding: 60px 20px; }
+
+  .paquetesTitle { font-size: 2.2rem; }
+  .paquetesSubtitle { font-size: 1.1rem; }
+
+  .paqueteCard { padding: 22px; }
+  .paquetePrice { font-size: 1.7rem; }
+}
+
+
+/* =============================== */
+/*  SM — ≥ 576px (celulares grandes)*/
+/* =============================== */
+@media (max-width: 576px) {
+  .paquetesTitle { font-size: 2rem; }
+
+  .paquetesGrid {
+    grid-template-columns: 1fr; /* UNA SOLA COLUMNA */
+    gap: 20px;
+  }
+
+  .paqueteCard { padding: 20px; }
+  .btnSelect { padding: 10px; font-size: 0.95rem; }
+}
+
+
+/* =============================== */
+/*  XS — ≤ 450px (iPhone 14, 13...) */
+/* =============================== */
+@media (max-width: 450px) {
+  .paquetesSection { padding: 50px 15px; }
+
+  .paquetesTitle { font-size: 1.7rem; }
+  .paquetesSubtitle { font-size: 0.95rem; }
+
+  .paqueteCard {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .paquetePrice { font-size: 1.5rem; }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+
+/* =============================== */
+/*  XXS — ≤ 380px (celulares chicos) */
+/* =============================== */
+@media (max-width: 380px) {
+  .paquetesTitle { font-size: 1.6rem; }
+  .paqueteCard {
+    padding: 16px;
+  }
+  .paqueteCard ul li { font-size: 0.85rem; }
+  .paquetePrice { font-size: 1.35rem; }
+  .btnSelect { font-size: 0.9rem; }
+}
